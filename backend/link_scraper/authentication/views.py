@@ -13,6 +13,12 @@ class RegisterView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer
 
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        return Response(data={'user':{'username': user.username, 'email': user.email,}}, status=status.HTTP_201_CREATED)
+
 class LoginView(generics.GenericAPIView):
     permission_classes = (AllowAny,)
     serializer_class = LoginSerializer
@@ -26,5 +32,5 @@ class LoginView(generics.GenericAPIView):
             return Response({
                 'refresh': str(refresh),
                 'access': str(refresh.access_token),
-            })
-        return Response({'error': 'Invalid Credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+            }, status=status.HTTP_200_OK)
+        return Response({'Error': 'Invalid Credentials'}, status=status.HTTP_401_UNAUTHORIZED)
