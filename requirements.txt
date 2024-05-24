@@ -3,7 +3,6 @@ djangorestframework
 pyyaml
 requests
 django-cors-headers
-swagger-ui
 djangorestframework-simplejwt
 beautifulsoup4
 html5lib
