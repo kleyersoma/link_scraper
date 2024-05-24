@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+.env
+
+# If you are using sessions, caches, or other file-based databases
+*.sas7bdat
+*.sas7bdat.lock
+
+# Translations
+*.mo
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Logs and databases
+*.log
+*.db
+
+# Local development settings
+local_settings.py
+
+# Docker
+*.box
+*.docker
+*.dockerfile
+.dockerignore
+
+# pylint
+pylint/
+
+# Virtualenv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.nox/
+coverage.xml
+nosetests.xml
+coverage/
+nosetests.xml
+*.cover
+
+# Pytest
+.pytest_cache/
+.cache/

@@ -4,6 +4,6 @@ pyyaml
 requests
 django-cors-headers
 swagger-ui
-gunicorn
-celery
 djangorestframework-simplejwt
+beautifulsoup4
+html5lib
